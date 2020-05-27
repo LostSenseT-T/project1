@@ -5,8 +5,8 @@ import os
 app = Flask(__name__)
 
 #for HEROKU
-#app.config.from_object(os.environ['APP_SETTINGS'])
-#app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config.from_object(os.environ['APP_SETTINGS'])
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 #db = sqlalchemy(app)
 
